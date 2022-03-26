@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/aptlyund/public_html/
-    - cp -R out $DEPLOYPATH
+    - /bin/cp -R out $DEPLOYPATH
 #    - /bin/cp style.css $DEPLOYPATH
