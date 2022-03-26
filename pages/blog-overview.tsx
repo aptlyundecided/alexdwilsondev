@@ -17,7 +17,7 @@ const BlogHome: NextPage = () => {
                 </div>
             </header>
             <div>
-                
+
             </div>
         </div>
     )
