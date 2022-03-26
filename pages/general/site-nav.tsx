@@ -26,11 +26,11 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
                             <a href={'/'} className={homeActive}>Home</a>
                         </li>
                         <li>
-                            <a href={'blog-overview'} className={blogActive}>Blog</a>
+                            <a href={'/blog-overview'} className={blogActive}>Blog</a>
                         </li>
-                        <li>
-                            <a className={'menu-item'}>Demo Projects</a>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <a className={'menu-item'}>Demo Projects</a>*/}
+                        {/*</li>*/}
                         <li>
                             <a href={'/development-history'} className={aboutActive}>Development History</a>
                         </li>
