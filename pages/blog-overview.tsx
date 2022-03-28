@@ -13,8 +13,12 @@ const BlogHome: NextPage = () => {
                     <header>
                         <h1>Blog Overview</h1>
                     </header>
-                    <h2>Keeping Myself Honest</h2>
-                    <p>If I can't describe it in writing then I will not claim to know it.</p>
+                    <h2>Documenting the Journey</h2>
+                    <p>
+                        I learn better when writing about what I am tinkering with. Maybe not tutorials or
+                        code examples, but generally speaking about sticking points, or parts of the tech that
+                        I love or hate.
+                    </p>
                 </div>
             </header>
             <div className={'terminal-card ' + blogStyles.latestPosts}>

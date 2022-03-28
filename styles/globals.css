@@ -6,8 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   --background-color: black;
-  --primary-color: cyan;
-  --font-color: cyan;
+  --primary-color: #80cbc4;
+  --font-color: #80cbc4;
 }
 
 a {

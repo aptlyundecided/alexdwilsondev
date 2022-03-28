@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/aptlyund/public_html/
     - /bin/cp -R out/. $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
