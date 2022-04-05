@@ -1,0 +1,23 @@
+.canvas-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.coordinate-canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.over-container {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.canvas-box {
+    width: 100%;
+}

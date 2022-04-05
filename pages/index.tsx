@@ -42,9 +42,7 @@ const Home: NextPage = () => {
     }
 
     useEffect(() => {
-        // if (!triggered) {
-        //     append();
-        // }
+
     });
 
     return (
@@ -85,11 +83,11 @@ const Home: NextPage = () => {
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>Code and Infrastructure Testing</td>
+                            <td>HTML Canvas, WebGL, and SVG Manipulation</td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>Continuous Integration</td>
+                            <td>Interesting Integration Testing & Code Interrogation Techniques</td>
                         </tr>
                     </tbody>
                 </table>
@@ -98,8 +96,8 @@ const Home: NextPage = () => {
             <section>
                 <div className={'terminal-card ' + styles.headerCard}>
                     <p>
-                        I like to build tooling to make life easier.  Interfaces, Data Analysis, Manufacturing Automation, in the
-                        end it's all just stuff to make doing more possible.
+                        I like to build software tooling for data manipulation, as well as building
+                        neat looking dashboards and graphical layouts.
                     </p>
                 </div>
             </section>

@@ -44,6 +44,10 @@ const StaticAppInterest: any = (props: PropsWithChildren<any>) => {
                         <p>So this is more of a farewell to the SPA from me.  "Goodbye, World!" Says the express servers hosting my SPA apps.</p>
                     </div>
                 </div>
+                <div className={'terminal-card'}>
+                    <h3>Other Posts:</h3>
+                    <p><a href={'/blog/precision-positioning-with-canvas'}>Precision Positioning with Canvas</a></p>
+                </div>
             </section>
         </div>
     )

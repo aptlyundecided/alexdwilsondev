@@ -16,7 +16,7 @@ const BlogHome: NextPage = () => {
                     <h2>Documenting the Journey</h2>
                     <p>
                         I learn better when writing about what I am tinkering with. Maybe not tutorials or
-                        code examples, but generally speaking about sticking points, or parts of the tech that
+                        code examples, but generally discussing sticking points, or parts of the tech that
                         I love or hate.
                     </p>
                 </div>
@@ -26,6 +26,7 @@ const BlogHome: NextPage = () => {
                     <h3>Latest Posts</h3>
                 </header>
                 &nbsp;
+                <p><a href={'/blog/precision-positioning-with-canvas'}>Precision Positioning in HTML Canvas</a></p>
                 <p><a href={'/blog/static-app-interest'}>Static App Interest</a></p>
             </div>
         </div>
