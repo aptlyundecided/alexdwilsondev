@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import 'terminal.css';
 import SiteNav from '../../general/site-nav';
 import styles from '../../../styles/Home.module.css'
-import { Canvas } from '../../modules/canvas';
+import { Canvas } from '../../../modules/canvas';
 
 const Dyn = Canvas.Particles.NonInteractive.DynamicThemedParticles;
 
