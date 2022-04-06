@@ -7,7 +7,7 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
     const inactive = 'menu-item';
     const active = 'menu-item active';
     let blogActive, aboutActive, homeActive, demoProjects, contactActive = 'menu-item';
-    
+
     useEffect(() => {
         if (!onLoad) {
             if (window.innerWidth > 800) {
@@ -25,6 +25,7 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
         demoProjects = props.activePage === 'demo-projects' ? active : inactive;
         contactActive = props.activePage === 'contact' ? active : inactive;
     }
+
     return (
         <nav className={'site-menu'}>
             <p className={'terminal-prompt ' + 'menu-btn'} onClick={() => {setMenu(!menu)}}>
@@ -40,7 +41,7 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
                             <a href={'/blog-overview'} className={blogActive}>Blog</a>
                         </li>
                         <li>
-                            <a href={'/demo-projects/canvas/canvas-location'} className={demoProjects}>Demo Projects</a>
+                            <a href={'/demo-projects-home'} className={demoProjects}>Demo Projects</a>
                         </li>
                         <li>
                             <a href={'/development-history'} className={aboutActive}>Development History</a>
