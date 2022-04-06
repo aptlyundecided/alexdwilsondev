@@ -35,11 +35,8 @@ const FirstCanvas: NextPage = () => {
                         Move mouse or Tap below:
                     </p>
                 </div>
+                <Dyn></Dyn>
                 <div className={'terminal-card ' } >
-                    <Dyn></Dyn>
-                </div>
-                <div>
-
                 </div>
             </div>
         </div>

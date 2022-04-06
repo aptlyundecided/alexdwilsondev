@@ -1,17 +1,23 @@
 import styles from "../../styles/Home.module.css";
-import {NextComponentType, NextPage, NextPageContext} from "next";
-import { PropsWithChildren } from "react";
-import { ComponentType } from 'react';
-
-interface SiteNavProps {
-    activePage: string;
-}
-
+import { PropsWithChildren, useState, useEffect } from "react";
 
 const SiteNav: any = (props: PropsWithChildren<any>) => {
+    const [menu, setMenu] = useState(false);
+    const [onLoad, setOnLoad] = useState(false);
     const inactive = 'menu-item';
     const active = 'menu-item active';
     let blogActive, aboutActive, homeActive, demoProjects, contactActive = 'menu-item';
+    
+    useEffect(() => {
+        if (!onLoad) {
+            if (window.innerWidth > 800) {
+                setMenu(true);
+            }
+        }
+
+        setOnLoad(true);
+    }, [onLoad]);
+
     if (typeof props.activePage !== 'undefined') {
         homeActive = props.activePage === 'home' ? active : inactive;
         blogActive = props.activePage === 'blog' ? active : inactive;
@@ -20,9 +26,12 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
         contactActive = props.activePage === 'contact' ? active : inactive;
     }
     return (
-        <section>
-            <div className={'terminal-card' + styles.headerCard}>
-                <nav className={'terminal-menu'}>
+        <nav className={'site-menu'}>
+            <p className={'terminal-prompt ' + 'menu-btn'} onClick={() => {setMenu(!menu)}}>
+                <span>{menu ? 'Close Menu' : 'Open Menu'}</span>
+            </p>
+            <div className={'terminal-card' + styles.headerCard} style={menu ? {display: 'block'} : {display: 'none'}}>
+                <nav className={'terminal-menu'} >
                     <ul>
                         <li>
                             <a href={'/'} className={homeActive}>Home</a>
@@ -42,7 +51,7 @@ const SiteNav: any = (props: PropsWithChildren<any>) => {
                     </ul>
                 </nav>
             </div>
-        </section>
+        </nav>
     )
 }
 

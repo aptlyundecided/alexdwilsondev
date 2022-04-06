@@ -41,9 +41,6 @@ const Home: NextPage = () => {
         setTriggered(true);
     }
 
-    useEffect(() => {
-
-    });
 
     return (
         <div className={styles.pageContainer}>
@@ -99,6 +96,7 @@ const Home: NextPage = () => {
                         I like to build software tooling for data manipulation, as well as building
                         neat looking dashboards and graphical layouts.
                     </p>
+
                 </div>
             </section>
        </div>

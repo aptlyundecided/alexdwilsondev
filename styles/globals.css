@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
+  margin-bottom: 5.0em;
   --background-color: black;
   --primary-color: #80cbc4;
   --font-color: #80cbc4;
@@ -19,3 +20,6 @@ a {
   box-sizing: border-box;
 }
 
+.menu-btn {
+  cursor: pointer;
+}
